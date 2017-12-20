@@ -1,7 +1,14 @@
 # ember-wasm
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Proof of concept demo of loading up a wasm script. Does not represent best practice.
+
+Strategy:
+- Throw the wasm file in public
+- load it in a component lifecycle hook using fetch (see tutorial links below)
+- probably ought to wrap it all in an [ember concurrency](https://ember-concurrency.com/)
+task so it doesn't break in testing. (WIP, not done yet)
+
+Based on this short and sweet WASM tutorial from [Google CodeLabs](https://codelabs.developers.google.com/codelabs/web-assembly-intro/index.html?index=..%2F..%2Findex#3) and the MDN example found [here](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 ## Prerequisites
 
