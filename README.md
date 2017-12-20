@@ -1,6 +1,6 @@
 # ember-wasm
 
-Proof of concept demo of loading up a wasm script. Does not represent best practice.
+Proof of concept demo of loading up a wasm (Web Assembly) script in an Ember app. Does not represent best practice.
 
 Strategy:
 - Throw the wasm file in public
