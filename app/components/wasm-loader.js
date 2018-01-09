@@ -6,7 +6,8 @@ import Component from '@ember/component';
 
 export default Component.extend({
   didRender() {
-    var importObject = { imports: { imported_func: arg => alert("If the WASM file is working, the number displayed should be the answer to life, the universe, and everything: " + arg) } };
+    let that = this
+    var importObject = { imports: { imported_func: function(arg) { that.set('wasmValue', arg) } } };
 
     fetch('simple.wasm').then(response =>
       response.arrayBuffer()
