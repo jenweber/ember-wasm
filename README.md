@@ -3,10 +3,10 @@
 Proof of concept demo of loading up a wasm (Web Assembly) script in an Ember app. Does not represent best practice.
 
 ## Strategy:
-- Throw the wasm file in the public directory
+- Throw the wasm file in the public directory (see tutorials linked below to learn how to create/where to get one)
 - load it in a component lifecycle hook using fetch (see tutorial links below)
 - `ember s` and visit http://localhost:4200
-- check the console and see that it prints 42, which was the value in the wasm file
+- Check to see if the page displays "42", which was the value in the wasm file
 - as a next step, probably ought to wrap it all in an [ember concurrency](https://ember-concurrency.com/)
 task so it doesn't break in testing. (WIP, not done yet)
 
@@ -38,15 +38,6 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
 ### Building
 
 * `ember build` (development)
@@ -54,7 +45,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Follow [heroku ember buildpack](https://github.com/heroku/heroku-buildpack-emberjs) and
+```
+git push heroku master
+```
 
 ## Further Reading / Useful Links
 
