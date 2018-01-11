@@ -1,6 +1,6 @@
 # ember-wasm
 
-Proof of concept demo of loading up a wasm (Web Assembly) script in an Ember app. Does not represent best practice. Go to http://ember-wasm.herokuapp.com/ to see it deployed.
+Proof of concept demo of loading up a wasm (Web Assembly) script in an Ember app. Does not represent best practice. Go to https://ember-wasm.herokuapp.com/ to see it deployed.
 
 ## Strategy:
 - Throw the wasm file in the public directory (see tutorials linked below to learn how to create/where to get one)
